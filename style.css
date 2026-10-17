@@ -1,6 +1,7 @@
 html {
     --color-accent: oklch(65% 50% 0);
     accent-color: var(--color-accent);
+    color-scheme: light dark;
 }
 
 body {
@@ -26,9 +27,10 @@ h1 {
 }
 
 nav {
-    --border-color: oklch(80% 3% 200);
+    --border-color: oklch(50% 10% 200 / 40%);
     display: flex;
-    margin-bottom: 1em;
+    /* top margin leaves room for the theme switcher above the nav */
+    margin-block: 2.5rem 1em;
     border-bottom: 1px solid var(--border-color);
 
     a {
@@ -46,12 +48,12 @@ nav {
         &:hover {
             border-bottom: 0.4em solid var(--color-accent);
             padding-bottom: 0.1em;
-            background-color: oklch(from var(--color-accent) 95% 5% h);
+            background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
         }
     }
 }
 
-input, textarea, button {
+input, textarea, button, select {
     font: inherit;
 }
 
@@ -95,7 +97,7 @@ form {
     h2 {
         margin-block: 0 1em;
         padding-bottom: 0.3em;
-        border-bottom: 1px solid oklch(80% 3% 200);
+        border-bottom: 1px solid oklch(50% 10% 200 / 40%);
         color: var(--color-accent);
         font-size: 110%;
         text-transform: uppercase;
@@ -141,4 +143,12 @@ form {
     section a {
         color: var(--color-accent);
     }
+}
+
+/* Lab 3 Step 4.3: theme switcher in the top right corner */
+.color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
 }
