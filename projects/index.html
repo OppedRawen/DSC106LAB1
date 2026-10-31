@@ -6,70 +6,28 @@
     <title>Projects</title>
     <link rel="stylesheet" href="../style.css">
     <script type="module" src="../global.js"></script>
+    <script type="module" src="projects.js"></script>
 </head>
 <body>
-    <h1>Projects</h1>
+    <h1 class="projects-title">Projects</h1>
+
+    <!-- Lab 5 Step 1.1 + 2.3: pie chart and legend side by side, drawn by projects.js -->
+    <div class="container">
+        <svg id="projects-pie-plot" viewBox="-50 -50 100 100"></svg>
+        <!-- Lab 5 Step 2.2 -->
+        <ul class="legend"></ul>
+    </div>
+
+    <!-- Lab 5 Step 4.1 -->
+    <input
+        class="searchBar"
+        type="search"
+        aria-label="Search projects"
+        placeholder="🔍 Search projects…"
+    >
+
     <div class="projects">
-        <article>
-            <h2>Lorem ipsum dolor sit.</h2>
-            <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sit modi quo iusto animi quod, quos sint totam. Ab, assumenda a. Necessitatibus iusto aspernatur nisi. Suscipit reiciendis quibusdam incidunt.</p>
-        </article>
-        <article>
-            <h2>Quas nemo officiis voluptate accusamus dolorem.</h2>
-            <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sit modi quo iusto animi quod, quos sint totam. Ab, assumenda a. Necessitatibus iusto aspernatur nisi. Suscipit reiciendis quibusdam incidunt.</p>
-        </article>
-        <article>
-            <h2>Amet consectetur adipisicing.</h2>
-            <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sit modi quo iusto animi quod, quos sint totam. Ab, assumenda a. Necessitatibus iusto aspernatur nisi. Suscipit reiciendis quibusdam incidunt.</p>
-        </article>
-        <article>
-            <h2>Deserunt in sit modi quo iusto animi.</h2>
-            <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sit modi quo iusto animi quod, quos sint totam. Ab, assumenda a. Necessitatibus iusto aspernatur nisi. Suscipit reiciendis quibusdam incidunt.</p>
-        </article>
-        <article>
-            <h2>Necessitatibus iusto.</h2>
-            <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sit modi quo iusto animi quod, quos sint totam. Ab, assumenda a. Necessitatibus iusto aspernatur nisi. Suscipit reiciendis quibusdam incidunt.</p>
-        </article>
-        <article>
-            <h2>Suscipit reiciendis quibusdam incidunt.</h2>
-            <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sit modi quo iusto animi quod, quos sint totam. Ab, assumenda a. Necessitatibus iusto aspernatur nisi. Suscipit reiciendis quibusdam incidunt.</p>
-        </article>
-        <article>
-            <h2>Ab assumenda.</h2>
-            <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sit modi quo iusto animi quod, quos sint totam. Ab, assumenda a. Necessitatibus iusto aspernatur nisi. Suscipit reiciendis quibusdam incidunt.</p>
-        </article>
-        <article>
-            <h2>Quos sint totam aspernatur nisi.</h2>
-            <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sit modi quo iusto animi quod, quos sint totam. Ab, assumenda a. Necessitatibus iusto aspernatur nisi. Suscipit reiciendis quibusdam incidunt.</p>
-        </article>
-        <article>
-            <h2>Voluptatum eveniet.</h2>
-            <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sit modi quo iusto animi quod, quos sint totam. Ab, assumenda a. Necessitatibus iusto aspernatur nisi. Suscipit reiciendis quibusdam incidunt.</p>
-        </article>
-        <article>
-            <h2>Magnam facilis possimus dolore.</h2>
-            <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sit modi quo iusto animi quod, quos sint totam. Ab, assumenda a. Necessitatibus iusto aspernatur nisi. Suscipit reiciendis quibusdam incidunt.</p>
-        </article>
-        <article>
-            <h2>Repellat sed.</h2>
-            <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sit modi quo iusto animi quod, quos sint totam. Ab, assumenda a. Necessitatibus iusto aspernatur nisi. Suscipit reiciendis quibusdam incidunt.</p>
-        </article>
-        <article>
-            <h2>Excepturi harum quidem rerum.</h2>
-            <img src="https://vis-society.github.io/labs/2/images/empty.svg" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt in sit modi quo iusto animi quod, quos sint totam. Ab, assumenda a. Necessitatibus iusto aspernatur nisi. Suscipit reiciendis quibusdam incidunt.</p>
-        </article>
+        <!-- Lab 4 Step 1.5: projects are rendered from lib/projects.json by projects.js -->
     </div>
 </body>
 </html>

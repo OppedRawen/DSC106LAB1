@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Farming vs Fighting: League of Legends Analysis",
+    "year": "2026",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Data science project using 2025 professional League of Legends match data from Oracle's Elixir to test whether teams that are down in kills but ahead in CS at 15 minutes perform like teams that are up in kills."
+  },
+  {
+    "title": "STEM Degree Share vs Pell Grant Enrollment",
+    "year": "2026",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Jupyter Notebook analysis comparing the share of STEM degrees a college awards with its Pell Grant enrollment."
+  },
+  {
+    "title": "DSC 106 Portfolio Website",
+    "year": "2026",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "This site: hand-written HTML, CSS Grid and Flexbox layouts, a JavaScript-generated nav with dark mode, projects loaded from JSON, live GitHub stats, and a D3 pie chart that filters projects by year."
+  },
+  {
+    "title": "SkillBridge",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Upload a resume and a job description to see which skills you have and which you're missing. Uses SkillNER and SpaCy for skill extraction, sentence-transformer embeddings for semantic matching, and optional GPT suggestions for what to learn."
+  },
+  {
+    "title": "Rappi Product Scraper",
+    "year": "2025",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Python scraper that pulls product data from Rappi search results by extracting the JSON that Next.js embeds in the page's __NEXT_DATA__ script, instead of parsing HTML."
+  },
+  {
+    "title": "EcoTracker (HackSC 2024 Winner)",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "React Native and Firebase mobile app where users log eco-friendly activities with photos to earn points and badges, browse a community feed, and climb a leaderboard. 1st place in the Adventure category at HackSC 2024."
+  },
+  {
+    "title": "SEA Data Catalog",
+    "year": "2024",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "JavaScript catalog website built for the Snap Engineering Academy application, with features to search, filter and sort a dataset stored in arrays and objects."
+  },
+  {
+    "title": "IVC Computer Science Club Website",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Website for the Irvine Valley College Computer Science Club showcasing upcoming events and projects, built with React, Tailwind CSS and Framer Motion."
+  },
+  {
+    "title": "Developer Portfolio V1",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "My first web developer portfolio, built with React, Tailwind CSS and Framer Motion animations, deployed on Netlify."
+  },
+  {
+    "title": "Book Search Engine",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "MERN stack app for browsing books through the Google Books API and saving favorites, with a GraphQL API."
+  },
+  {
+    "title": "Movie Search",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Group front-end project that looks up movies and shows with the OMDb API, embeds a related trailer via the YouTube API, and lists related New York Times articles."
+  },
+  {
+    "title": "The Marketplace",
+    "year": "2023",
+    "image": "https://dsc106.com/labs/lab02/images/empty.svg",
+    "description": "Full-stack MVC e-commerce group project with user accounts, product search over a MySQL catalog of about 100 products, and a test checkout with Stripe."
+  }
+]

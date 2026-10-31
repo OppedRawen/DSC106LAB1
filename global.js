@@ -4,15 +4,13 @@ console.log('IT’S ALIVE!');
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
-
-// Step 2 (replaced by Step 3, which adds the current class while building the nav)
+// Step 2
 // let navLinks = $$('nav a');
 // let currentLink = navLinks.find(
 //   (a) => a.host === location.host && a.pathname === location.pathname,
 // );
 // currentLink?.classList.add('current');
-
-// Step 3.1: build the navigation menu from data
+// Step 3
 let pages = [
   { url: '', title: 'Home' },
   { url: 'projects/', title: 'Projects' },
@@ -107,3 +105,71 @@ form?.addEventListener('submit', function (event) {
   let url = form.action + '?' + params.join('&');
   location.href = url;
 });
+
+
+// ---------------- Lab 4 ----------------
+
+// Lab 4 Step 1.2: load and parse a JSON file
+export async function fetchJSON(url) {
+  try {
+    // Fetch the JSON file from the given URL
+    const response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch projects: ${response.statusText}`);
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching or parsing JSON data:', error);
+  }
+}
+
+// Lab 4 Step 1.4: render a list of projects into a container
+export function renderProjects(projects, containerElement, headingLevel = 'h2') {
+  // Step 1.4 (challenge): bail out if the container is missing
+  if (!(containerElement instanceof Element)) {
+    console.error('renderProjects: containerElement is not a valid DOM element');
+    return;
+  }
+
+  // Step 1.4 (challenge): only allow h1–h6 as the heading level
+  if (!/^h[1-6]$/.test(headingLevel)) {
+    console.warn(`renderProjects: invalid heading level "${headingLevel}", using h2`);
+    headingLevel = 'h2';
+  }
+
+  // Step 1.4.2: clear existing content to avoid duplicates
+  containerElement.innerHTML = '';
+
+  // Step 1.3 (check your understanding): placeholder for an empty list
+  if (!projects || projects.length === 0) {
+    containerElement.innerHTML = '<p>No projects to show yet.</p>';
+    return;
+  }
+
+  for (let project of projects) {
+    // Step 1.4.3
+    const article = document.createElement('article');
+
+    // Step 1.4.4 + 1.4.6: content with a dynamic heading level
+    // Lab 5 Step 0.1: year under the description, wrapped together so they share one grid row
+    article.innerHTML = `
+      <${headingLevel}>${project.title}</${headingLevel}>
+      <img src="${project.image}" alt="${project.title}">
+      <div>
+        <p>${project.description}</p>
+        <p class="project-year">c. ${project.year}</p>
+      </div>
+    `;
+
+    // Step 1.4.5
+    containerElement.appendChild(article);
+  }
+}
+
+// Lab 4 Step 3.2: public profile data from the GitHub API
+export async function fetchGitHubData(username) {
+  return fetchJSON(`https://api.github.com/users/${username}`);
+}
